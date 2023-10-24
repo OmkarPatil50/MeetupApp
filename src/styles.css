@@ -1,0 +1,306 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+:root {
+  --primary-color: #ff3b30;
+  --secondary-color: #fff6ea;
+  --action-color: #3b82f6;
+  --grey-color: #9a9a9a;
+  --black-color: #282828;
+  --white-color: #fff;
+  --lynx-white-color: #f7f7f7;
+  --violet-color: #5348c7;
+  --lynx-gray-color: #c5c5c5;
+  --font: "Open Sans", sans-serif;
+  --xxl-size: 4rem;
+  --xl-size: 2.5rem;
+  --l-size: 2rem;
+  --m-size: 1.5rem;
+  --s-size: 1rem;
+  --xs-size: 0.5rem;
+  --xl-font: 3rem;
+  --light-weight: 300;
+  --regular-weight: 400;
+  --semibold-weight: 600;
+  --bold-weight: 700;
+  --black-weight: 900;
+}
+
+body {
+  font-family: var(--font);
+  background-color: var(--lynx-white-color);
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.link {
+  text-decoration: none;
+}
+
+/* -------------------------------NavBar----------------------------- */
+
+.navbar {
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-around;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
+  z-index: 1;
+  overflow: hidden;
+  background-color: white;
+}
+
+.navbar-heading {
+  font-size: var(--m-size);
+  color: var(--primary-color);
+  font-family: cursive;
+}
+.search-box {
+  margin: 20px;
+  padding: 10px;
+  width: 300px;
+  border-radius: 20px;
+  font-weight: var(--regular-weight);
+}
+
+/* ---------------------------------Landing------------------------- */
+
+.sub-section {
+  position: relative;
+  top: 100px;
+  left: 0;
+  margin: 0 40px;
+}
+
+.sub-section-heading {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sub-section-heading select {
+  cursor: pointer;
+  margin: 20px;
+  width: 200px;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 14px;
+}
+
+span {
+  color: var(--primary-color);
+}
+
+.meetup-card {
+  margin: 20px;
+  width: 250px;
+  height: 350px;
+  position: relative;
+}
+
+.event-thumbnail-card {
+  width: 250px;
+  height: 250px;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.event-type-tag {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 10px;
+  padding: 5px 7.5px;
+  background-color: var(--white-color);
+  text-decoration: none;
+  color: var(--black-color);
+  font-size: 14px;
+  border-radius: 5px;
+  font-weight: var(--black-weight);
+}
+
+.event-time-landing {
+  color: var(--grey-color);
+  font-weight: var(--bold-weight);
+  margin: 10px 0 5px;
+}
+
+.event-title-landing {
+  margin: 0;
+  color: var(--black-color);
+  font-weight: var(--bold-weight);
+  font-size: 22px;
+  padding: 0;
+}
+
+/* ------------------------------details----------------------------- */
+
+.sub-section-details {
+  position: relative;
+  top: 100px;
+  left: 0;
+  margin: 0 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-section,
+.right-section {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.right-section {
+  align-items: center;
+}
+
+.details-page-heading {
+  margin: 0;
+}
+
+.hosted-head {
+  margin: 20px 0 0 0;
+  font-size: 14px;
+}
+
+.hosted-company {
+  margin: 0;
+  font-size: 16px;
+}
+
+.event-details-thumbnail {
+  width: 500px;
+  height: 400px;
+  margin: 20px 0;
+}
+
+.details-info-heading {
+  margin: 0 0 0 0;
+}
+
+.event-tag {
+  padding: 7.5px 10px;
+  margin: 10px;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
+
+.speaker-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.rsvp-page {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 11;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rsvp-box {
+  padding: 20px;
+  height: max-content;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--lynx-white-color);
+  box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.rsvp-box label {
+  display: block;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.rsvp-box input {
+  width: 95%;
+  padding: 5px;
+}
+
+.paid-tag {
+  color: red;
+  font-size: 14px;
+}
+
+.rsvp-btn {
+  cursor: pointer;
+  padding: 10px;
+  text-align: center;
+  font-size: 16px;
+  width: 100%;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  border: none;
+}
+
+.arrow {
+  margin: 0 40px 0 0;
+  font-size: 24px;
+  color: var(--black-color);
+}
+
+.event-info-box {
+  background-color: var(--white-color);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.event-info-list-item {
+  display: flex;
+  padding: 10px;
+  flex-wrap: wrap;
+}
+
+.event-info-list-item div {
+  padding: 0;
+}
+
+.event-info-list-item p {
+  margin: 0 0 0 10px;
+}
+
+.event-speakers-box {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+.speaker-list-item {
+  background-color: white;
+  margin: 10px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.speaker-designation,
+.speaker-name {
+  margin: 5px 0;
+}
+
+.rsvp-main-btn {
+  width: 200px;
+  padding: 10px;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  border: none;
+}
